@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #16a085;
+  color: #222;
+}
+
+.container {
+  position: relative;
+  max-width: 600px;
+  padding: 40px 70px 190px 70px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  position: relative;
+  margin-top: 70px;
+  overflow: hidden;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.5);
+  border-radius: 5px;
+}
+
+.container::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/bicycle.png");
+  background-position: bottom bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 580px;
+  height: 580px;
+  left: 10px;
+  top: 100%;
+  transform: translateY(-50%);
+}
+
+
+.maket-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading {
+  margin: 0;
+}
+
+.account {
+  border-radius: 50%;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:45px;
+  border: 1px solid #dfdfdf;
+  transition: 0.3s ease;
+}
+
+.account:hover {
+  box-shadow: 0 0 0 4px #e9e9e9;
+}
+
+.text {
+  color: grey;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.list-onee {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-text {
+  color: grey;
+  font-weight: bold;
+}
+
+.list-cost {
+  color: black;
+  font-weight: bold;
+}
+
+.big {
+  text-transform: uppercase;
+}
